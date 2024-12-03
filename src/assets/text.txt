@@ -1,0 +1,30 @@
+CRUD OPERATION PRACTICE
+
+GOAL: Creating user contact
+Contact details : name, tel, image
+
+Form Component
+
+Create a Form with three (2) input fields and btn : name, tel, image and submit btn
+useState() to store and update input data for each
+event handlers for each fields for each
+save the current states in an object
+render form in App.jsx
+
+.............................................................
+
+App Component
+
+Import Form component
+Import Contact component
+Declear useState([]) which will store arrays of contacts
+Pass a function or the updating state as props to Form Component to recieve the object saved in the object
+Pass the current state as props to Contact Component.
+
+.............................................................
+
+Contact Component
+
+Contact Component with preferred design
+Recieve the props passed from the Parent Component
+Loop through using the map method since the recieving props is an array
