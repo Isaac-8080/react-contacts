@@ -28,3 +28,11 @@ Contact Component
 Contact Component with preferred design
 Recieve the props passed from the Parent Component
 Loop through using the map method since the recieving props is an array
+
+
+
+
+image links
+https://avatars.githubusercontent.com/u/73018818?v=4
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIS6UrZauAPAzQK2ckkveEcTU0b3LU4Ffwg&s
