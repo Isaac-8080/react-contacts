@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import ContactForm from './components/ContactForm'
 import UserContact from './components/UserContact';
 
@@ -9,14 +8,26 @@ function App() {
 
   const handleFormData = (data) => {
     setFormData([...formData, data])
-  }  
+  }
+
+  const handleDelete = (id) => {
+    setFormData(formData.filter((user) => user.id !== id))
+  }
+
+  const handleEdit = (id, newDetails) => {
+
+    setFormData(
+      formData.map((user) => { user.id === id ? newDetails : user })
+    )
+    
+  }
 
   return (
     <>
       <div className='flex flex-col items-center mt-5'>
         <ContactForm handleFormData={handleFormData} />
-        <div className='flex flex-col gap-3 mt-5'>
-          <UserContact formData={formData} />
+        <div className='flex flex-col gap-3'>
+          <UserContact formData={formData} handleEdit={handleEdit} handleDelete={handleDelete} />
         </div>
       </div>
     </>
