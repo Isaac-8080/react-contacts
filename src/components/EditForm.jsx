@@ -16,7 +16,29 @@ const EditForm = ({user, handleEdit}) => {
     setIsModalOpen(false)
   }
 
+  const handleName = (e) => {
+    setName(e.target.value);
+  }
   
+  const handleTel = (e) => {
+    setTel(e.target.value);
+  }
+  
+  const handleImage = (e) => {
+    setImage(e.target.value);
+  }
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // current states
+    const editFormDetails = {name, tel, image, id: user.id}    
+
+    handleEdit(user.id, editFormDetails);
+    
+    
+
+  }
 
   return (
     <div>
