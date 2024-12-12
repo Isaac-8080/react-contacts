@@ -36,7 +36,11 @@ const EditForm = ({user, handleEdit}) => {
 
     handleEdit(user.id, editFormDetails);
     
+    setName("");
+    setTel("");
+    setImage("");
     
+    closeModal();
 
   }
 
