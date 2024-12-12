@@ -33,6 +33,13 @@ Loop through using the map method since the recieving props is an array
 
 
 image links
+
 https://avatars.githubusercontent.com/u/73018818?v=4
 
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIS6UrZauAPAzQK2ckkveEcTU0b3LU4Ffwg&s
+https://ca.slack-edge.com/T06U2L2FJ15-U070KGK2KT3-f4884c7a1d1c-512
+
+https://ca.slack-edge.com/T06ERV699N2-U07EF6TG43X-aca61aeb0ace-512
+
+https://ca.slack-edge.com/T06ERV699N2-U07E3H2AP55-8ad0cfc3bbbf-512
+
+https://ca.slack-edge.com/T06U2L2FJ15-U06UVSL6AV7-37c900c49d43-512

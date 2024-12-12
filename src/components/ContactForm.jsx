@@ -20,13 +20,13 @@ const ContactForm = ({handleFormData}) => {
   }
   
   const handleSubmit = (e) => {
-    
+
     e.preventDefault();
 
     // current states
     const contactDetails = {name, tel, image, id: uuid()}
 
-    // if input are not empty
+    // submit if inputs are not empty
     if (name && tel && image ) {
       handleFormData(contactDetails);
     }
