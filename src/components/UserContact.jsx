@@ -4,13 +4,11 @@ const UserContact = ({formData, handleEdit, handleDelete }) => {
   
   return (
     <>
-      {formData.length < 1 ? (
+      {formData.length === 0 ? (
           <p className="text-center text-black text-2xl">No contacts available</p>
-        ) : formData.map((user) => {
-
-          // if (!user) return null;
+        ) : formData.map((user) => {        
         
-        return (
+          return (
           <div key={user.id} className="card bg-slate-500 mt-3 text-white w-96 shadow">
             <div className="card-body p-3">
               <div className='flex items-center justify-between gap-3'>
