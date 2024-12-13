@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import './App.css'
 import ContactForm from './components/ContactForm'
 import UserContact from './components/UserContact';
 
 function App() {
 
   const [formData, setFormData] = useState([]);
+  console.log(formData);
 
   const handleFormData = (data) => {
     setFormData([...formData, data])
@@ -17,9 +19,8 @@ function App() {
   const handleEdit = (id, newDetails) => {
 
     setFormData(
-      formData.map((user) => { user.id === id ? newDetails : user })
+      formData.map(user => user.id === id ? newDetails : user)
     )
-    
   }
 
   return (
