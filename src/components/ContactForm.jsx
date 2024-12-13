@@ -24,10 +24,10 @@ const ContactForm = ({handleFormData}) => {
     e.preventDefault();
 
     // current states
-    const contactDetails = {name, tel, image, id: uuid()}
+    const contactDetails = {image,name, tel, id: uuid()}
 
     // submit if inputs are not empty
-    if (name && tel && image ) {
+    if (name && tel ) {
       handleFormData(contactDetails);
     }
 
@@ -40,19 +40,27 @@ const ContactForm = ({handleFormData}) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
+        
         <h1 className='font-bold text-3xl'>Contact Form</h1>
+        
         <div className='flex flex-col gap-3 mt-3 w-96'>
+          
           <label className="input input-bordered flex items-center gap-2">
             <input type="text" className="grow" value={name} onChange={handleName} placeholder="Name" />
           </label>
+
           <label className="input input-bordered flex items-center gap-2">
             <input type="tel" className="grow" value={tel} onChange={handleTel} placeholder="Tel" />
           </label>
+
           <label className="input input-bordered flex items-center gap-2">
             <input type="text" className="grow" value={image} onChange={handleImage} placeholder="Image link" />
           </label>
+
           <button className="btn w-full">Add Contact</button>
+
         </div>
+
       </form>
     </>
   )
