@@ -6,7 +6,7 @@ const EditForm = ({user, handleEdit}) => {
   const [tel, setTel] = useState(user.tel);
   const [image, setImage] = useState(user.image);
 
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false);
   
   const openModal = () =>{
     setIsModalOpen(true)
@@ -48,7 +48,7 @@ const EditForm = ({user, handleEdit}) => {
         <dialog open id="my_modal_2" className="modal bg-white opacity-50">
           <div className="modal-box w-fit">
             <form onSubmit={handleSubmit}>
-              <h1 className='font-bold text-3xl text-black'>Contact Form</h1>
+              <h1 className='font-bold text-3xl text-black'>Update Contact</h1>
               <div className='flex flex-col gap-3 mt-3 w-96'>
                 <label className="input input-bordered flex items-center gap-2">
                   <input type="text" className="grow text-black" value={name} onChange={handleName} placeholder="Name" />
