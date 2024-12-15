@@ -27,7 +27,7 @@ function App() {
     <>
       <div className='flex flex-col items-center mt-5'>
         <ContactForm handleFormData={handleFormData} />
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col'>
           <UserContact formData={formData} handleEdit={handleEdit} handleDelete={handleDelete} />
         </div>
       </div>
