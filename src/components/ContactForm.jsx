@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { v4 as uuid } from 'uuid';
 
-const ContactForm = (props) => {
+const ContactForm = ({handleFormData}) => {
 
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
@@ -20,6 +20,7 @@ const ContactForm = (props) => {
   }
   
   const handleSubmit = (e) => {
+    
     e.preventDefault();
 
     // current states
@@ -27,8 +28,12 @@ const ContactForm = (props) => {
 
     // if input are not empty
     if (name && tel && image ) {
-      props.handleFormData(contactDetails)
+      handleFormData(contactDetails);
     }
+
+    setName("");
+    setTel("");
+    setImage("");
     
   }
 
